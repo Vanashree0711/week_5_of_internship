@@ -1,0 +1,55 @@
+/* =============================
+   CSS VARIABLES (Theme System)
+============================= */
+
+:root {
+  --bg-color: #f4f6f9;
+  --text-color: #222;
+  --primary-color: #2563eb;
+  --card-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-color: #f1f5f9;
+  --primary-color: #3b82f6;
+  --card-bg: #1e293b;
+}
+
+/* =============================
+   GLOBAL STYLES
+============================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}

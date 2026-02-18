@@ -1,0 +1,80 @@
+/* =============================
+   HEADER (Flexbox)
+============================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--card-bg);
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+/* =============================
+   GRID LAYOUT (Main Structure)
+============================= */
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Mobile First */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* =============================
+   CARD COMPONENT (BEM)
+============================= */
+
+.card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card__title {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.card__text {
+  font-size: 0.9rem;
+}
+
+/* Modifier */
+.card--primary {
+  border: 2px solid var(--primary-color);
+}
+
+/* =============================
+   FOOTER
+============================= */
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--card-bg);
+}

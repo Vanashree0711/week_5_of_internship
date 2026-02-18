@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced CSS Project</title>
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <div class="header__logo">DevArena</div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Services</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="btn btn--theme" id="themeToggle">🌙</button>
+  </header>
+
+  <main class="grid">
+
+    <section class="card card--primary">
+      <h2 class="card__title">CSS Grid Layout</h2>
+      <p class="card__text">
+        This layout is built using CSS Grid for complex page structure.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2 class="card__title">Flexbox Components</h2>
+      <p class="card__text">
+        Navigation and card alignment use Flexbox.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2 class="card__title">Theme Switching</h2>
+      <p class="card__text">
+        Uses CSS variables and JavaScript for dynamic theming.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2 class="card__title">Animations</h2>
+      <p class="card__text">
+        Smooth hover transitions and fade-in effects applied.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">© 2026 Advanced CSS Project</p>
+  </footer>
+
+  <script src="js/theme-switcher.js"></script>
+</body>
+</html>
